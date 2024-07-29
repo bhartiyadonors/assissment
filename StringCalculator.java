@@ -19,6 +19,16 @@ public class StringCalculator {
         List<Integer> negatives = new ArrayList<>();
         int sum = 0;
 
+        for (String numStr : numberStrings) {
+            int num = Integer.parseInt(numStr);
+            if (num < 0) {
+                negatives.add(num);
+            } else if (num <= 1000) {
+                sum += num;
+            }
+        }
+
+
         return 0;
     }
 
