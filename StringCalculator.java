@@ -28,6 +28,9 @@ public class StringCalculator {
             }
         }
 
+        if (!negatives.isEmpty()) {
+            throw new IllegalArgumentException("Negative numbers not allowed: " + negatives);
+        }
 
         return 0;
     }
