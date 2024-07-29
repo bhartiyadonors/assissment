@@ -13,8 +13,11 @@ public class StringCalculator {
             String delimiter = numbers.substring(2, delimiterIndex);
             delimiters = new String[]{delimiter};
             numbers = numbers.substring(delimiterIndex + 1);
-
         }
+
+        String[] numberStrings = numbers.split(String.join("|", delimiters));
+        List<Integer> negatives = new ArrayList<>();
+        int sum = 0;
 
         return 0;
     }
