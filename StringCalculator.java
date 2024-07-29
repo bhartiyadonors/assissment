@@ -10,7 +10,9 @@ public class StringCalculator {
         String[] delimiters = {",", "\n"};
         if (numbers.startsWith("//")) {
             int delimiterIndex = numbers.indexOf("\n");
-
+            String delimiter = numbers.substring(2, delimiterIndex);
+            delimiters = new String[]{delimiter};
+            numbers = numbers.substring(delimiterIndex + 1);
         }
 
         return 0;
