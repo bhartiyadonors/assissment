@@ -32,7 +32,7 @@ public class StringCalculator {
             throw new IllegalArgumentException("Negative numbers not allowed: " + negatives);
         }
 
-        return 0;
+        return sum;
     }
 
     public static void main(String[] args) {
